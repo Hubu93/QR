@@ -12,26 +12,68 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+    body {
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      height: 100vh;
+      background-color: hsl(212, 45%, 89%);
+      font-size: 15px;
+      font-family: 'Roboto', sans-serif;
+    } 
+
+    section {
+      padding: 15px 0 0 0;
+      background-color: hsl(0, 0%, 100%);
+      border-radius: 13px;
+      width: 320px;
+      display: flex;
+      justify-content: center;
+    }
+
     .content {
-      text-align: center;
+        text-align: center;
+        border-radius: 13px;
+    }
+
+    .wrapperContent {
+      padding: 15px;
     }
 
     h1 {
-      font-size: 15px;
-    }
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 18px;
+      }
 
-    h2 {
-      font-size: 11px;
+    p {
+      font-size: 15px;
+      color: hsl(212, 45%, 70%);
+    }
+    
+
+    @media only screen and (min-width: 375px) {
+      .content {
+        width: 288px;
+        height: 463px;
+      }
+
+      .img {
+        width: 288px;
+        border-radius: 15px;
+        margin-bottom: 3px;
+      }
     }
 
     @media only screen and (min-width: 1440px) {
-      body {
-        background-color: lightblue;
-            }
     }
     /* font-family: 'Roboto', sans-serif; */
   </style>
@@ -39,18 +81,12 @@
 <body>
   <section>
     <div class="content">
-      <img src="./images/image-qr-code.png" width="576px" length="576px" class="img" alt="qrCode">
+       <img src="./images/image-qr-code.png" class="img" alt="qrCode">
+       <div class="wrapperContent"> 
         <h1>Improve your front-end skills by building projects</h1>
-        <h2>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</h2>
+        <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+       </div>
     </div>
   </section>
-  
-
-  
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>
